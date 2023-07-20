@@ -1,1 +1,22 @@
-<p>numbers-page works!</p>
+<p-panel header="Numeric Pipes" class="p-2">
+  <p>Pipes incluidos en Angular usualmente en el Common Module</p>
+</p-panel>
+
+<div class="grid mt-2">
+  <div class="col-12 md:col-4">
+    <p-card header="Number Pipe">
+      {{ totalSells + 1234 | number : "1.2-2" }}
+    </p-card>
+  </div>
+  <div class="col-12 md:col-4">
+    <p-card header="Currency Pipe">
+      {{ totalSells | currency : "MXN" : "symbol-narrow" : "1.4-4" }}
+    </p-card>
+  </div>
+
+  <div class="col-12 md:col-4">
+    <p-card header="Percent Pipe">
+      {{ percent | percent }}
+    </p-card>
+  </div>
+</div>
